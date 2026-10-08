@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.coverage
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+venv/
+.venv/
+
+# Node.js
+node_modules/
+geo_explorer/mcp/build/
+
+# Segredos e ambiente
+.env
+.env.*
+
+# Certificados emitidos localmente
+docs/certificados-emitidos/
+
+# Bob / editor
+.bob/
+.vscode/
+.DS_Store

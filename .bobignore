@@ -1,0 +1,7 @@
+# Arquivos que o Bob deve ignorar
+node_modules/
+.env
+.env.*
+docs/certificados-emitidos/
+geo_explorer/mcp/build/
+*.tmp
