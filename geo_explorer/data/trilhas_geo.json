@@ -1,0 +1,1193 @@
+{
+  "aviso": "Dados fictícios criados para o projeto Geo-Explorer.",
+  "trilhas": [
+    {
+      "id": 1,
+      "nome": "Python: Primeiros Passos",
+      "tecnologia": "Python",
+      "nivel": "Básico",
+      "carga_horaria": 20,
+      "xp_total": 5000,
+      "vagas_disponiveis": 500,
+      "modulos": [
+        "Variáveis e tipos de dados",
+        "Condicionais e laços",
+        "Funções e módulos",
+        "Listas, tuplas e dicionários",
+        "Arquivos e tratamento de erros"
+      ],
+      "lives": [
+        {
+          "titulo": "Live: Variáveis e tipos de dados",
+          "data": "2026-10-20",
+          "horario": "19:00"
+        },
+        {
+          "titulo": "Live: Arquivos e tratamento de erros",
+          "data": "2026-11-03",
+          "horario": "20:00"
+        }
+      ],
+      "promocao": {
+        "ativa": true,
+        "desconto_percentual": 25,
+        "validade": "2026-12-31"
+      }
+    },
+    {
+      "id": 2,
+      "nome": "Python: Dados e APIs",
+      "tecnologia": "Python",
+      "nivel": "Intermediário",
+      "carga_horaria": 36,
+      "xp_total": 9000,
+      "vagas_disponiveis": 365,
+      "modulos": [
+        "Orientação a objetos",
+        "Consumo de APIs REST",
+        "Análise de dados com pandas",
+        "Testes com pytest",
+        "Automação de tarefas"
+      ],
+      "lives": [
+        {
+          "titulo": "Live: Orientação a objetos",
+          "data": "2026-10-27",
+          "horario": "19:00"
+        },
+        {
+          "titulo": "Live: Automação de tarefas",
+          "data": "2026-11-10",
+          "horario": "20:00"
+        }
+      ],
+      "promocao": {
+        "ativa": false,
+        "desconto_percentual": 0,
+        "validade": null
+      }
+    },
+    {
+      "id": 3,
+      "nome": "Python: Arquitetura e Performance",
+      "tecnologia": "Python",
+      "nivel": "Avançado",
+      "carga_horaria": 48,
+      "xp_total": 12000,
+      "vagas_disponiveis": 230,
+      "modulos": [
+        "Decoradores e geradores",
+        "Concorrência com asyncio",
+        "Profiling e otimização",
+        "Padrões de projeto",
+        "Empacotamento e publicação"
+      ],
+      "lives": [
+        {
+          "titulo": "Live: Decoradores e geradores",
+          "data": "2026-11-03",
+          "horario": "19:00"
+        },
+        {
+          "titulo": "Live: Empacotamento e publicação",
+          "data": "2026-11-17",
+          "horario": "20:00"
+        }
+      ],
+      "promocao": {
+        "ativa": false,
+        "desconto_percentual": 0,
+        "validade": null
+      }
+    },
+    {
+      "id": 4,
+      "nome": "JavaScript: Fundamentos da Web",
+      "tecnologia": "JavaScript",
+      "nivel": "Básico",
+      "carga_horaria": 20,
+      "xp_total": 5000,
+      "vagas_disponiveis": 455,
+      "modulos": [
+        "Sintaxe e tipos",
+        "Funções e escopo",
+        "DOM e eventos",
+        "Arrays e objetos",
+        "Fetch e JSON"
+      ],
+      "lives": [
+        {
+          "titulo": "Live: Sintaxe e tipos",
+          "data": "2026-11-10",
+          "horario": "19:00"
+        },
+        {
+          "titulo": "Live: Fetch e JSON",
+          "data": "2026-11-24",
+          "horario": "20:00"
+        }
+      ],
+      "promocao": {
+        "ativa": true,
+        "desconto_percentual": 25,
+        "validade": "2026-12-31"
+      }
+    },
+    {
+      "id": 5,
+      "nome": "JavaScript: Front-end Moderno",
+      "tecnologia": "JavaScript",
+      "nivel": "Intermediário",
+      "carga_horaria": 36,
+      "xp_total": 9000,
+      "vagas_disponiveis": 380,
+      "modulos": [
+        "ES6+ e módulos",
+        "Programação assíncrona",
+        "Consumindo APIs",
+        "Componentização com React",
+        "Testes com Jest"
+      ],
+      "lives": [
+        {
+          "titulo": "Live: ES6+ e módulos",
+          "data": "2026-11-17",
+          "horario": "19:00"
+        },
+        {
+          "titulo": "Live: Testes com Jest",
+          "data": "2026-12-01",
+          "horario": "20:00"
+        }
+      ],
+      "promocao": {
+        "ativa": false,
+        "desconto_percentual": 0,
+        "validade": null
+      }
+    },
+    {
+      "id": 6,
+      "nome": "JavaScript: Full Stack com Node.js",
+      "tecnologia": "JavaScript",
+      "nivel": "Avançado",
+      "carga_horaria": 48,
+      "xp_total": 12000,
+      "vagas_disponiveis": 245,
+      "modulos": [
+        "APIs com Node e Express",
+        "Autenticação com JWT",
+        "Banco de dados e ORM",
+        "WebSockets em tempo real",
+        "Deploy e observabilidade"
+      ],
+      "lives": [
+        {
+          "titulo": "Live: APIs com Node e Express",
+          "data": "2026-11-24",
+          "horario": "19:00"
+        },
+        {
+          "titulo": "Live: Deploy e observabilidade",
+          "data": "2026-12-08",
+          "horario": "20:00"
+        }
+      ],
+      "promocao": {
+        "ativa": false,
+        "desconto_percentual": 0,
+        "validade": null
+      }
+    },
+    {
+      "id": 7,
+      "nome": "Java: Orientação a Objetos do Zero",
+      "tecnologia": "Java",
+      "nivel": "Básico",
+      "carga_horaria": 20,
+      "xp_total": 5000,
+      "vagas_disponiveis": 470,
+      "modulos": [
+        "Sintaxe e tipos",
+        "Classes e objetos",
+        "Herança e polimorfismo",
+        "Coleções",
+        "Exceções"
+      ],
+      "lives": [
+        {
+          "titulo": "Live: Sintaxe e tipos",
+          "data": "2026-12-01",
+          "horario": "19:00"
+        },
+        {
+          "titulo": "Live: Exceções",
+          "data": "2026-12-15",
+          "horario": "20:00"
+        }
+      ],
+      "promocao": {
+        "ativa": true,
+        "desconto_percentual": 25,
+        "validade": "2026-12-31"
+      }
+    },
+    {
+      "id": 8,
+      "nome": "Java: APIs com Spring Boot",
+      "tecnologia": "Java",
+      "nivel": "Intermediário",
+      "carga_horaria": 36,
+      "xp_total": 9000,
+      "vagas_disponiveis": 335,
+      "modulos": [
+        "Injeção de dependências",
+        "Controllers REST",
+        "Persistência com JPA",
+        "Validação e tratamento de erros",
+        "Testes com JUnit e Mockito"
+      ],
+      "lives": [
+        {
+          "titulo": "Live: Injeção de dependências",
+          "data": "2026-12-08",
+          "horario": "19:00"
+        },
+        {
+          "titulo": "Live: Testes com JUnit e Mockito",
+          "data": "2026-12-22",
+          "horario": "20:00"
+        }
+      ],
+      "promocao": {
+        "ativa": false,
+        "desconto_percentual": 0,
+        "validade": null
+      }
+    },
+    {
+      "id": 9,
+      "nome": "Java: Microsserviços e Concorrência",
+      "tecnologia": "Java",
+      "nivel": "Avançado",
+      "carga_horaria": 48,
+      "xp_total": 12000,
+      "vagas_disponiveis": 260,
+      "modulos": [
+        "Streams e programação funcional",
+        "Concorrência e threads virtuais",
+        "Microsserviços com Spring Cloud",
+        "Mensageria com Kafka",
+        "Tuning da JVM"
+      ],
+      "lives": [
+        {
+          "titulo": "Live: Streams e programação funcional",
+          "data": "2026-12-15",
+          "horario": "19:00"
+        },
+        {
+          "titulo": "Live: Tuning da JVM",
+          "data": "2026-12-29",
+          "horario": "20:00"
+        }
+      ],
+      "promocao": {
+        "ativa": false,
+        "desconto_percentual": 0,
+        "validade": null
+      }
+    },
+    {
+      "id": 10,
+      "nome": "SQL: Consultas Essenciais",
+      "tecnologia": "SQL",
+      "nivel": "Básico",
+      "carga_horaria": 20,
+      "xp_total": 5000,
+      "vagas_disponiveis": 485,
+      "modulos": [
+        "SELECT, WHERE e ORDER BY",
+        "Agregações e GROUP BY",
+        "JOINs",
+        "INSERT, UPDATE e DELETE",
+        "Modelagem relacional"
+      ],
+      "lives": [
+        {
+          "titulo": "Live: SELECT, WHERE e ORDER BY",
+          "data": "2026-12-22",
+          "horario": "19:00"
+        },
+        {
+          "titulo": "Live: Modelagem relacional",
+          "data": "2027-01-05",
+          "horario": "20:00"
+        }
+      ],
+      "promocao": {
+        "ativa": true,
+        "desconto_percentual": 25,
+        "validade": "2026-12-31"
+      }
+    },
+    {
+      "id": 11,
+      "nome": "SQL: Análise de Dados",
+      "tecnologia": "SQL",
+      "nivel": "Intermediário",
+      "carga_horaria": 36,
+      "xp_total": 9000,
+      "vagas_disponiveis": 350,
+      "modulos": [
+        "Subconsultas e CTEs",
+        "Window functions",
+        "Índices e planos de execução",
+        "Views e procedures",
+        "Transações e integridade"
+      ],
+      "lives": [
+        {
+          "titulo": "Live: Subconsultas e CTEs",
+          "data": "2026-12-29",
+          "horario": "19:00"
+        },
+        {
+          "titulo": "Live: Transações e integridade",
+          "data": "2027-01-12",
+          "horario": "20:00"
+        }
+      ],
+      "promocao": {
+        "ativa": false,
+        "desconto_percentual": 0,
+        "validade": null
+      }
+    },
+    {
+      "id": 12,
+      "nome": "SQL: Performance e Administração",
+      "tecnologia": "SQL",
+      "nivel": "Avançado",
+      "carga_horaria": 48,
+      "xp_total": 12000,
+      "vagas_disponiveis": 215,
+      "modulos": [
+        "Otimização de consultas",
+        "Particionamento de tabelas",
+        "Replicação e backup",
+        "Segurança e permissões",
+        "Migrações de esquema"
+      ],
+      "lives": [
+        {
+          "titulo": "Live: Otimização de consultas",
+          "data": "2027-01-05",
+          "horario": "19:00"
+        },
+        {
+          "titulo": "Live: Migrações de esquema",
+          "data": "2027-01-19",
+          "horario": "20:00"
+        }
+      ],
+      "promocao": {
+        "ativa": false,
+        "desconto_percentual": 0,
+        "validade": null
+      }
+    },
+    {
+      "id": 13,
+      "nome": "Cloud: Conceitos Fundamentais",
+      "tecnologia": "Cloud",
+      "nivel": "Básico",
+      "carga_horaria": 20,
+      "xp_total": 5000,
+      "vagas_disponiveis": 500,
+      "modulos": [
+        "Modelos IaaS, PaaS e SaaS",
+        "Computação e armazenamento",
+        "Redes e segurança básica",
+        "Custos e billing",
+        "Sua primeira aplicação na nuvem"
+      ],
+      "lives": [
+        {
+          "titulo": "Live: Modelos IaaS, PaaS e SaaS",
+          "data": "2027-01-12",
+          "horario": "19:00"
+        },
+        {
+          "titulo": "Live: Sua primeira aplicação na nuvem",
+          "data": "2027-01-26",
+          "horario": "20:00"
+        }
+      ],
+      "promocao": {
+        "ativa": true,
+        "desconto_percentual": 25,
+        "validade": "2026-12-31"
+      }
+    },
+    {
+      "id": 14,
+      "nome": "Cloud: Containers e Automação",
+      "tecnologia": "Cloud",
+      "nivel": "Intermediário",
+      "carga_horaria": 36,
+      "xp_total": 9000,
+      "vagas_disponiveis": 365,
+      "modulos": [
+        "Docker na prática",
+        "Orquestração com Kubernetes",
+        "Pipelines de CI/CD",
+        "Infraestrutura como código",
+        "Monitoramento e logs"
+      ],
+      "lives": [
+        {
+          "titulo": "Live: Docker na prática",
+          "data": "2027-01-19",
+          "horario": "19:00"
+        },
+        {
+          "titulo": "Live: Monitoramento e logs",
+          "data": "2027-02-02",
+          "horario": "20:00"
+        }
+      ],
+      "promocao": {
+        "ativa": false,
+        "desconto_percentual": 0,
+        "validade": null
+      }
+    },
+    {
+      "id": 15,
+      "nome": "Cloud: Arquitetura Resiliente",
+      "tecnologia": "Cloud",
+      "nivel": "Avançado",
+      "carga_horaria": 48,
+      "xp_total": 12000,
+      "vagas_disponiveis": 230,
+      "modulos": [
+        "Alta disponibilidade",
+        "Serverless e eventos",
+        "Segurança zero trust",
+        "FinOps",
+        "Recuperação de desastres"
+      ],
+      "lives": [
+        {
+          "titulo": "Live: Alta disponibilidade",
+          "data": "2027-01-26",
+          "horario": "19:00"
+        },
+        {
+          "titulo": "Live: Recuperação de desastres",
+          "data": "2027-02-09",
+          "horario": "20:00"
+        }
+      ],
+      "promocao": {
+        "ativa": false,
+        "desconto_percentual": 0,
+        "validade": null
+      }
+    },
+    {
+      "id": 16,
+      "nome": "IA Generativa: Primeiros Prompts",
+      "tecnologia": "IA Generativa",
+      "nivel": "Básico",
+      "carga_horaria": 20,
+      "xp_total": 5000,
+      "vagas_disponiveis": 455,
+      "modulos": [
+        "O que são LLMs",
+        "Engenharia de prompts",
+        "Limites e alucinações",
+        "Ética e uso responsável",
+        "Automatizando tarefas do dia a dia"
+      ],
+      "lives": [
+        {
+          "titulo": "Live: O que são LLMs",
+          "data": "2027-02-02",
+          "horario": "19:00"
+        },
+        {
+          "titulo": "Live: Automatizando tarefas do dia a dia",
+          "data": "2027-02-16",
+          "horario": "20:00"
+        }
+      ],
+      "promocao": {
+        "ativa": true,
+        "desconto_percentual": 25,
+        "validade": "2026-12-31"
+      }
+    },
+    {
+      "id": 17,
+      "nome": "IA Generativa: Aplicações com APIs",
+      "tecnologia": "IA Generativa",
+      "nivel": "Intermediário",
+      "carga_horaria": 36,
+      "xp_total": 9000,
+      "vagas_disponiveis": 380,
+      "modulos": [
+        "Consumindo APIs de LLMs",
+        "Embeddings e busca semântica",
+        "RAG na prática",
+        "Function calling e ferramentas",
+        "Avaliação de respostas"
+      ],
+      "lives": [
+        {
+          "titulo": "Live: Consumindo APIs de LLMs",
+          "data": "2027-02-09",
+          "horario": "19:00"
+        },
+        {
+          "titulo": "Live: Avaliação de respostas",
+          "data": "2027-02-23",
+          "horario": "20:00"
+        }
+      ],
+      "promocao": {
+        "ativa": false,
+        "desconto_percentual": 0,
+        "validade": null
+      }
+    },
+    {
+      "id": 18,
+      "nome": "IA Generativa: Agentes e MCP",
+      "tecnologia": "IA Generativa",
+      "nivel": "Avançado",
+      "carga_horaria": 48,
+      "xp_total": 12000,
+      "vagas_disponiveis": 245,
+      "modulos": [
+        "Agentes e planejamento",
+        "Servidores MCP",
+        "Orquestração multiagente",
+        "Guardrails e segurança",
+        "Observabilidade e custos"
+      ],
+      "lives": [
+        {
+          "titulo": "Live: Agentes e planejamento",
+          "data": "2027-02-16",
+          "horario": "19:00"
+        },
+        {
+          "titulo": "Live: Observabilidade e custos",
+          "data": "2027-03-02",
+          "horario": "20:00"
+        }
+      ],
+      "promocao": {
+        "ativa": false,
+        "desconto_percentual": 0,
+        "validade": null
+      }
+    },
+    {
+      "id": 19,
+      "nome": "TypeScript: Tipagem Estática",
+      "tecnologia": "TypeScript",
+      "nivel": "Básico",
+      "carga_horaria": 20,
+      "xp_total": 5000,
+      "vagas_disponiveis": 470,
+      "modulos": [
+        "Tipos primitivos e inferência",
+        "Interfaces e type aliases",
+        "Funções tipadas",
+        "Classes e módulos",
+        "Configuração do tsconfig"
+      ],
+      "lives": [
+        {
+          "titulo": "Live: Tipos primitivos e inferência",
+          "data": "2027-02-23",
+          "horario": "19:00"
+        },
+        {
+          "titulo": "Live: Configuração do tsconfig",
+          "data": "2027-03-09",
+          "horario": "20:00"
+        }
+      ],
+      "promocao": {
+        "ativa": true,
+        "desconto_percentual": 25,
+        "validade": "2026-12-31"
+      }
+    },
+    {
+      "id": 20,
+      "nome": "TypeScript: Aplicações Robustas",
+      "tecnologia": "TypeScript",
+      "nivel": "Intermediário",
+      "carga_horaria": 36,
+      "xp_total": 9000,
+      "vagas_disponiveis": 335,
+      "modulos": [
+        "Generics",
+        "Utility types",
+        "Narrowing e type guards",
+        "Integração com React e Node",
+        "Testes tipados"
+      ],
+      "lives": [
+        {
+          "titulo": "Live: Generics",
+          "data": "2027-03-02",
+          "horario": "19:00"
+        },
+        {
+          "titulo": "Live: Testes tipados",
+          "data": "2027-03-16",
+          "horario": "20:00"
+        }
+      ],
+      "promocao": {
+        "ativa": false,
+        "desconto_percentual": 0,
+        "validade": null
+      }
+    },
+    {
+      "id": 21,
+      "nome": "TypeScript: Tipos Avançados",
+      "tecnologia": "TypeScript",
+      "nivel": "Avançado",
+      "carga_horaria": 48,
+      "xp_total": 12000,
+      "vagas_disponiveis": 260,
+      "modulos": [
+        "Tipos condicionais",
+        "Mapped types",
+        "Template literal types",
+        "Design de bibliotecas tipadas",
+        "Migração de projetos JavaScript"
+      ],
+      "lives": [
+        {
+          "titulo": "Live: Tipos condicionais",
+          "data": "2027-03-09",
+          "horario": "19:00"
+        },
+        {
+          "titulo": "Live: Migração de projetos JavaScript",
+          "data": "2027-03-23",
+          "horario": "20:00"
+        }
+      ],
+      "promocao": {
+        "ativa": false,
+        "desconto_percentual": 0,
+        "validade": null
+      }
+    },
+    {
+      "id": 22,
+      "nome": "React: Primeiros Componentes",
+      "tecnologia": "React",
+      "nivel": "Básico",
+      "carga_horaria": 20,
+      "xp_total": 5000,
+      "vagas_disponiveis": 485,
+      "modulos": [
+        "JSX e componentes",
+        "Props e estado",
+        "Eventos e formulários",
+        "Renderização de listas",
+        "Estilização"
+      ],
+      "lives": [
+        {
+          "titulo": "Live: JSX e componentes",
+          "data": "2027-03-16",
+          "horario": "19:00"
+        },
+        {
+          "titulo": "Live: Estilização",
+          "data": "2027-03-30",
+          "horario": "20:00"
+        }
+      ],
+      "promocao": {
+        "ativa": true,
+        "desconto_percentual": 25,
+        "validade": "2026-12-31"
+      }
+    },
+    {
+      "id": 23,
+      "nome": "React: Hooks e Roteamento",
+      "tecnologia": "React",
+      "nivel": "Intermediário",
+      "carga_horaria": 36,
+      "xp_total": 9000,
+      "vagas_disponiveis": 350,
+      "modulos": [
+        "useEffect e ciclo de vida",
+        "Hooks personalizados",
+        "Context API",
+        "React Router",
+        "Consumo de APIs"
+      ],
+      "lives": [
+        {
+          "titulo": "Live: useEffect e ciclo de vida",
+          "data": "2027-03-23",
+          "horario": "19:00"
+        },
+        {
+          "titulo": "Live: Consumo de APIs",
+          "data": "2027-04-06",
+          "horario": "20:00"
+        }
+      ],
+      "promocao": {
+        "ativa": false,
+        "desconto_percentual": 0,
+        "validade": null
+      }
+    },
+    {
+      "id": 24,
+      "nome": "React: Performance e Arquitetura",
+      "tecnologia": "React",
+      "nivel": "Avançado",
+      "carga_horaria": 48,
+      "xp_total": 12000,
+      "vagas_disponiveis": 215,
+      "modulos": [
+        "Memoização e renderização",
+        "Code splitting e lazy loading",
+        "Gerenciamento de estado global",
+        "Testes com Testing Library",
+        "Server components e SSR"
+      ],
+      "lives": [
+        {
+          "titulo": "Live: Memoização e renderização",
+          "data": "2027-03-30",
+          "horario": "19:00"
+        },
+        {
+          "titulo": "Live: Server components e SSR",
+          "data": "2027-04-13",
+          "horario": "20:00"
+        }
+      ],
+      "promocao": {
+        "ativa": false,
+        "desconto_percentual": 0,
+        "validade": null
+      }
+    },
+    {
+      "id": 25,
+      "nome": "Análise de Dados: Primeiras Análises",
+      "tecnologia": "Análise de Dados",
+      "nivel": "Básico",
+      "carga_horaria": 20,
+      "xp_total": 5000,
+      "vagas_disponiveis": 500,
+      "modulos": [
+        "Tipos de dados e planilhas",
+        "Limpeza de dados",
+        "Estatística descritiva",
+        "Gráficos básicos",
+        "Contando histórias com dados"
+      ],
+      "lives": [
+        {
+          "titulo": "Live: Tipos de dados e planilhas",
+          "data": "2027-04-06",
+          "horario": "19:00"
+        },
+        {
+          "titulo": "Live: Contando histórias com dados",
+          "data": "2027-04-20",
+          "horario": "20:00"
+        }
+      ],
+      "promocao": {
+        "ativa": true,
+        "desconto_percentual": 25,
+        "validade": "2026-12-31"
+      }
+    },
+    {
+      "id": 26,
+      "nome": "Análise de Dados: Python para Dados",
+      "tecnologia": "Análise de Dados",
+      "nivel": "Intermediário",
+      "carga_horaria": 36,
+      "xp_total": 9000,
+      "vagas_disponiveis": 365,
+      "modulos": [
+        "pandas na prática",
+        "Visualização com matplotlib",
+        "Análise exploratória",
+        "Correlação e hipóteses",
+        "Dashboards"
+      ],
+      "lives": [
+        {
+          "titulo": "Live: pandas na prática",
+          "data": "2027-04-13",
+          "horario": "19:00"
+        },
+        {
+          "titulo": "Live: Dashboards",
+          "data": "2027-04-27",
+          "horario": "20:00"
+        }
+      ],
+      "promocao": {
+        "ativa": false,
+        "desconto_percentual": 0,
+        "validade": null
+      }
+    },
+    {
+      "id": 27,
+      "nome": "Análise de Dados: Machine Learning",
+      "tecnologia": "Análise de Dados",
+      "nivel": "Avançado",
+      "carga_horaria": 48,
+      "xp_total": 12000,
+      "vagas_disponiveis": 230,
+      "modulos": [
+        "Regressão e classificação",
+        "Validação cruzada",
+        "Engenharia de atributos",
+        "Avaliação de modelos",
+        "Do notebook à produção"
+      ],
+      "lives": [
+        {
+          "titulo": "Live: Regressão e classificação",
+          "data": "2027-04-20",
+          "horario": "19:00"
+        },
+        {
+          "titulo": "Live: Do notebook à produção",
+          "data": "2027-05-04",
+          "horario": "20:00"
+        }
+      ],
+      "promocao": {
+        "ativa": false,
+        "desconto_percentual": 0,
+        "validade": null
+      }
+    },
+    {
+      "id": 28,
+      "nome": "DevOps: Cultura e Ferramentas",
+      "tecnologia": "DevOps",
+      "nivel": "Básico",
+      "carga_horaria": 20,
+      "xp_total": 5000,
+      "vagas_disponiveis": 455,
+      "modulos": [
+        "Cultura DevOps",
+        "Linux e terminal",
+        "Versionamento com Git",
+        "Automação com scripts",
+        "Introdução a CI"
+      ],
+      "lives": [
+        {
+          "titulo": "Live: Cultura DevOps",
+          "data": "2027-04-27",
+          "horario": "19:00"
+        },
+        {
+          "titulo": "Live: Introdução a CI",
+          "data": "2027-05-11",
+          "horario": "20:00"
+        }
+      ],
+      "promocao": {
+        "ativa": true,
+        "desconto_percentual": 25,
+        "validade": "2026-12-31"
+      }
+    },
+    {
+      "id": 29,
+      "nome": "DevOps: Pipelines e Containers",
+      "tecnologia": "DevOps",
+      "nivel": "Intermediário",
+      "carga_horaria": 36,
+      "xp_total": 9000,
+      "vagas_disponiveis": 380,
+      "modulos": [
+        "Docker e imagens",
+        "Pipelines de entrega contínua",
+        "Testes automatizados no pipeline",
+        "Gerenciamento de configuração",
+        "Observabilidade básica"
+      ],
+      "lives": [
+        {
+          "titulo": "Live: Docker e imagens",
+          "data": "2027-05-04",
+          "horario": "19:00"
+        },
+        {
+          "titulo": "Live: Observabilidade básica",
+          "data": "2027-05-18",
+          "horario": "20:00"
+        }
+      ],
+      "promocao": {
+        "ativa": false,
+        "desconto_percentual": 0,
+        "validade": null
+      }
+    },
+    {
+      "id": 30,
+      "nome": "DevOps: Plataforma e Confiabilidade",
+      "tecnologia": "DevOps",
+      "nivel": "Avançado",
+      "carga_horaria": 48,
+      "xp_total": 12000,
+      "vagas_disponiveis": 245,
+      "modulos": [
+        "Kubernetes em produção",
+        "GitOps",
+        "SLI, SLO e error budget",
+        "Resposta a incidentes",
+        "Engenharia de plataforma"
+      ],
+      "lives": [
+        {
+          "titulo": "Live: Kubernetes em produção",
+          "data": "2027-05-11",
+          "horario": "19:00"
+        },
+        {
+          "titulo": "Live: Engenharia de plataforma",
+          "data": "2027-05-25",
+          "horario": "20:00"
+        }
+      ],
+      "promocao": {
+        "ativa": false,
+        "desconto_percentual": 0,
+        "validade": null
+      }
+    },
+    {
+      "id": 31,
+      "nome": "Segurança: Fundamentos",
+      "tecnologia": "Segurança",
+      "nivel": "Básico",
+      "carga_horaria": 20,
+      "xp_total": 5000,
+      "vagas_disponiveis": 470,
+      "modulos": [
+        "Tríade CIA",
+        "Senhas e autenticação",
+        "Ameaças comuns",
+        "Criptografia básica",
+        "Boas práticas no dia a dia"
+      ],
+      "lives": [
+        {
+          "titulo": "Live: Tríade CIA",
+          "data": "2027-05-18",
+          "horario": "19:00"
+        },
+        {
+          "titulo": "Live: Boas práticas no dia a dia",
+          "data": "2027-06-01",
+          "horario": "20:00"
+        }
+      ],
+      "promocao": {
+        "ativa": true,
+        "desconto_percentual": 25,
+        "validade": "2026-12-31"
+      }
+    },
+    {
+      "id": 32,
+      "nome": "Segurança: Aplicações Seguras",
+      "tecnologia": "Segurança",
+      "nivel": "Intermediário",
+      "carga_horaria": 36,
+      "xp_total": 9000,
+      "vagas_disponiveis": 335,
+      "modulos": [
+        "OWASP Top 10",
+        "Validação de entrada",
+        "Gestão de segredos",
+        "Autenticação e autorização",
+        "Análise de dependências"
+      ],
+      "lives": [
+        {
+          "titulo": "Live: OWASP Top 10",
+          "data": "2027-05-25",
+          "horario": "19:00"
+        },
+        {
+          "titulo": "Live: Análise de dependências",
+          "data": "2027-06-08",
+          "horario": "20:00"
+        }
+      ],
+      "promocao": {
+        "ativa": false,
+        "desconto_percentual": 0,
+        "validade": null
+      }
+    },
+    {
+      "id": 33,
+      "nome": "Segurança: Defesa e Resposta",
+      "tecnologia": "Segurança",
+      "nivel": "Avançado",
+      "carga_horaria": 48,
+      "xp_total": 12000,
+      "vagas_disponiveis": 260,
+      "modulos": [
+        "Modelagem de ameaças",
+        "Monitoramento e SIEM",
+        "Testes de intrusão éticos",
+        "Forense básica",
+        "Plano de resposta a incidentes"
+      ],
+      "lives": [
+        {
+          "titulo": "Live: Modelagem de ameaças",
+          "data": "2027-06-01",
+          "horario": "19:00"
+        },
+        {
+          "titulo": "Live: Plano de resposta a incidentes",
+          "data": "2027-06-15",
+          "horario": "20:00"
+        }
+      ],
+      "promocao": {
+        "ativa": false,
+        "desconto_percentual": 0,
+        "validade": null
+      }
+    },
+    {
+      "id": 34,
+      "nome": "Git: Controle de Versão",
+      "tecnologia": "Git e GitHub",
+      "nivel": "Básico",
+      "carga_horaria": 20,
+      "xp_total": 5000,
+      "vagas_disponiveis": 485,
+      "modulos": [
+        "Repositórios e commits",
+        "Branches",
+        "Merge e conflitos",
+        "Repositórios remotos",
+        "Boas mensagens de commit"
+      ],
+      "lives": [
+        {
+          "titulo": "Live: Repositórios e commits",
+          "data": "2027-06-08",
+          "horario": "19:00"
+        },
+        {
+          "titulo": "Live: Boas mensagens de commit",
+          "data": "2027-06-22",
+          "horario": "20:00"
+        }
+      ],
+      "promocao": {
+        "ativa": true,
+        "desconto_percentual": 25,
+        "validade": "2026-12-31"
+      }
+    },
+    {
+      "id": 35,
+      "nome": "Git: Colaboração no GitHub",
+      "tecnologia": "Git e GitHub",
+      "nivel": "Intermediário",
+      "carga_horaria": 36,
+      "xp_total": 9000,
+      "vagas_disponiveis": 350,
+      "modulos": [
+        "Pull requests e revisão",
+        "Issues e projetos",
+        "Fluxos de trabalho",
+        "GitHub Actions",
+        "Documentação com README"
+      ],
+      "lives": [
+        {
+          "titulo": "Live: Pull requests e revisão",
+          "data": "2027-06-15",
+          "horario": "19:00"
+        },
+        {
+          "titulo": "Live: Documentação com README",
+          "data": "2027-06-29",
+          "horario": "20:00"
+        }
+      ],
+      "promocao": {
+        "ativa": false,
+        "desconto_percentual": 0,
+        "validade": null
+      }
+    },
+    {
+      "id": 36,
+      "nome": "Git: Fluxos Avançados",
+      "tecnologia": "Git e GitHub",
+      "nivel": "Avançado",
+      "carga_horaria": 48,
+      "xp_total": 12000,
+      "vagas_disponiveis": 215,
+      "modulos": [
+        "Rebase interativo",
+        "Cherry-pick e bisect",
+        "Monorepos",
+        "Proteção de branches",
+        "Recuperação de erros"
+      ],
+      "lives": [
+        {
+          "titulo": "Live: Rebase interativo",
+          "data": "2027-06-22",
+          "horario": "19:00"
+        },
+        {
+          "titulo": "Live: Recuperação de erros",
+          "data": "2027-07-06",
+          "horario": "20:00"
+        }
+      ],
+      "promocao": {
+        "ativa": false,
+        "desconto_percentual": 0,
+        "validade": null
+      }
+    }
+  ]
+}

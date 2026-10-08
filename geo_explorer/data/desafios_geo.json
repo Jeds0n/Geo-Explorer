@@ -1,0 +1,1042 @@
+{
+  "aviso": "Desafios criados para o projeto Geo-Explorer.",
+  "desafios": {
+    "Python": {
+      "Básico": [
+        {
+          "titulo": "Média de notas",
+          "enunciado": "Leia uma lista de notas separadas por espaço e calcule a média. Informe também se o aluno foi aprovado (média ≥ 7).",
+          "entrada": "Notas separadas por espaço: 8 6.5 9",
+          "saida": "Média com 1 casa decimal e a situação: 7.8 — Aprovado",
+          "dicas": [
+            "Use split() e map(float, ...).",
+            "sum(notas) / len(notas) resolve a média."
+          ],
+          "restricoes": [
+            "Trate lista vazia sem quebrar o programa."
+          ]
+        },
+        {
+          "titulo": "Contador de vogais",
+          "enunciado": "Receba uma frase e conte quantas vogais ela possui, ignorando acentos e diferenças entre maiúsculas e minúsculas.",
+          "entrada": "Uma frase: Aprender Python é divertido",
+          "saida": "Número inteiro: 11",
+          "dicas": [
+            "Normalize com lower().",
+            "Use unicodedata para remover acentos."
+          ],
+          "restricoes": [
+            "Não use bibliotecas externas."
+          ]
+        }
+      ],
+      "Intermediário": [
+        {
+          "titulo": "Consumidor de API de CEP",
+          "enunciado": "Crie uma função que consulte uma API REST de CEP e devolva rua e cidade. Trate timeout e CEP inválido com mensagens claras.",
+          "entrada": "CEP com 8 dígitos: 01001000",
+          "saida": "Dicionário com 'rua' e 'cidade', ou mensagem de erro",
+          "dicas": [
+            "Use requests com timeout.",
+            "Valide o CEP com uma expressão regular antes de chamar a API."
+          ],
+          "restricoes": [
+            "Cada chamada deve ter timeout de no máximo 5 s."
+          ]
+        },
+        {
+          "titulo": "Relatório de vendas com pandas",
+          "enunciado": "Dado um CSV de vendas (produto, quantidade, preço), gere o faturamento por produto e mostre os 3 mais vendidos.",
+          "entrada": "Arquivo vendas.csv",
+          "saida": "Tabela com os 3 produtos de maior faturamento",
+          "dicas": [
+            "Crie a coluna faturamento = quantidade * preco.",
+            "groupby + sum + nlargest."
+          ],
+          "restricoes": [
+            "Use pandas.",
+            "O script deve rodar com `python relatorio.py vendas.csv`."
+          ]
+        }
+      ],
+      "Avançado": [
+        {
+          "titulo": "Downloader assíncrono",
+          "enunciado": "Baixe uma lista de URLs em paralelo com asyncio, limitando a 5 conexões simultâneas e registrando o tempo total.",
+          "entrada": "Lista de URLs, uma por linha",
+          "saida": "Tamanho em bytes de cada URL e tempo total",
+          "dicas": [
+            "asyncio.Semaphore controla a concorrência.",
+            "Use aiohttp ou httpx.AsyncClient."
+          ],
+          "restricoes": [
+            "Máximo de 5 requisições simultâneas.",
+            "Falha em uma URL não pode derrubar as demais."
+          ]
+        },
+        {
+          "titulo": "Decorador de cache com expiração",
+          "enunciado": "Implemente um decorador @cache(ttl=segundos) que guarde resultados de funções e os descarte após o tempo informado.",
+          "entrada": "Uma função decorada chamada várias vezes",
+          "saida": "Resultado em cache dentro do TTL; recálculo depois dele",
+          "dicas": [
+            "Guarde (valor, instante) em um dicionário.",
+            "Use functools.wraps para preservar metadados."
+          ],
+          "restricoes": [
+            "Sem bibliotecas externas.",
+            "Deve funcionar com argumentos posicionais e nomeados."
+          ]
+        }
+      ]
+    },
+    "JavaScript": {
+      "Básico": [
+        {
+          "titulo": "Validador de palíndromos",
+          "enunciado": "Escreva uma função que diga se uma frase é palíndromo, ignorando espaços, pontuação e maiúsculas.",
+          "entrada": "String: Socorram-me, subi no ônibus em Marrocos",
+          "saida": "true ou false",
+          "dicas": [
+            "Remova caracteres não alfanuméricos com replace e regex.",
+            "Compare a string com ela invertida."
+          ],
+          "restricoes": [
+            "Use apenas JavaScript puro."
+          ]
+        },
+        {
+          "titulo": "Lista de tarefas no DOM",
+          "enunciado": "Monte uma página com campo de texto e botão que adiciona tarefas a uma lista; clicar em uma tarefa a marca como concluída.",
+          "entrada": "Texto digitado pela pessoa",
+          "saida": "Lista atualizada na tela",
+          "dicas": [
+            "addEventListener no botão e na lista.",
+            "classList.toggle marca a tarefa."
+          ],
+          "restricoes": [
+            "Sem frameworks."
+          ]
+        }
+      ],
+      "Intermediário": [
+        {
+          "titulo": "Busca com debounce",
+          "enunciado": "Crie um campo de busca que consulta uma API só depois de 400 ms sem digitação, cancelando requisições anteriores.",
+          "entrada": "Texto digitado",
+          "saida": "Lista de resultados renderizada",
+          "dicas": [
+            "setTimeout + clearTimeout implementam o debounce.",
+            "AbortController cancela fetch antigo."
+          ],
+          "restricoes": [
+            "Nunca disparar mais de uma requisição por pausa."
+          ]
+        },
+        {
+          "titulo": "Carrinho de compras",
+          "enunciado": "Implemente a lógica de um carrinho: adicionar, remover, alterar quantidade e calcular total com desconto por cupom.",
+          "entrada": "Operações sobre uma lista de itens",
+          "saida": "Estado do carrinho e valor total",
+          "dicas": [
+            "Prefira funções puras que retornam um novo estado.",
+            "Reduce calcula o total."
+          ],
+          "restricoes": [
+            "Escreva ao menos 3 testes com Jest."
+          ]
+        }
+      ],
+      "Avançado": [
+        {
+          "titulo": "API de tarefas com JWT",
+          "enunciado": "Construa uma API Express com cadastro, login e rotas protegidas por JWT para CRUD de tarefas por usuário.",
+          "entrada": "Requisições HTTP JSON",
+          "saida": "Respostas JSON com status HTTP corretos",
+          "dicas": [
+            "Guarde o hash da senha com bcrypt.",
+            "Crie um middleware que valide o token."
+          ],
+          "restricoes": [
+            "Nunca retornar senhas.",
+            "Segredo do JWT vem de variável de ambiente."
+          ]
+        },
+        {
+          "titulo": "Rate limiter",
+          "enunciado": "Implemente um limitador de requisições por IP (janela deslizante de 1 minuto, máximo de 60) como middleware.",
+          "entrada": "Requisições de vários IPs",
+          "saida": "429 quando o limite for excedido",
+          "dicas": [
+            "Guarde timestamps por IP em um Map.",
+            "Limpe entradas antigas para não vazar memória."
+          ],
+          "restricoes": [
+            "Complexidade amortizada O(1) por requisição."
+          ]
+        }
+      ]
+    },
+    "Java": {
+      "Básico": [
+        {
+          "titulo": "Calculadora de IMC",
+          "enunciado": "Leia peso e altura, calcule o IMC e classifique em Abaixo do peso, Normal, Sobrepeso ou Obesidade.",
+          "entrada": "Peso e altura: 70.5 1.75",
+          "saida": "IMC: 23,02 — Normal",
+          "dicas": [
+            "Use Scanner.",
+            "IMC = peso / (altura * altura)."
+          ],
+          "restricoes": [
+            "Rejeite valores menores ou iguais a zero."
+          ]
+        },
+        {
+          "titulo": "Cadastro de alunos",
+          "enunciado": "Modele a classe Aluno (nome, matrícula, notas) e um programa que cadastre 3 alunos e imprima a média de cada um.",
+          "entrada": "Dados digitados no console",
+          "saida": "Uma linha por aluno com a média",
+          "dicas": [
+            "Encapsule os atributos com getters.",
+            "Guarde os alunos em um ArrayList."
+          ],
+          "restricoes": [
+            "Java 17+."
+          ]
+        }
+      ],
+      "Intermediário": [
+        {
+          "titulo": "API REST de livros",
+          "enunciado": "Crie uma API Spring Boot com CRUD de livros (título, autor, ano) e validação dos campos obrigatórios.",
+          "entrada": "Requisições HTTP JSON",
+          "saida": "Respostas JSON com status adequados",
+          "dicas": [
+            "Use @RestController e @Valid.",
+            "Trate erros com @ControllerAdvice."
+          ],
+          "restricoes": [
+            "Persistência com JPA e banco H2."
+          ]
+        },
+        {
+          "titulo": "Relatório com Streams",
+          "enunciado": "Leia uma lista de funcionários, filtre quem ganha mais de R$ 3.000, ordene por salário decrescente e mostre os 5 primeiros.",
+          "entrada": "CSV: nome,salario",
+          "saida": "Top 5 formatado como 'Nome — R$ valor'",
+          "dicas": [
+            "filter, sorted, limit e map.",
+            "Comparator.comparing(...).reversed()."
+          ],
+          "restricoes": [
+            "Sem laços explícitos."
+          ]
+        }
+      ],
+      "Avançado": [
+        {
+          "titulo": "LRU Cache thread-safe",
+          "enunciado": "Implemente um cache LRU com capacidade configurável, operações get/put em O(1) e segurança para acesso concorrente.",
+          "entrada": "Operações PUT, GET e SIZE",
+          "saida": "Resultado de cada operação",
+          "dicas": [
+            "LinkedHashMap com accessOrder=true.",
+            "ReentrantReadWriteLock protege o acesso."
+          ],
+          "restricoes": [
+            "O(1) amortizado.",
+            "Apenas java.util.concurrent."
+          ]
+        },
+        {
+          "titulo": "Processador de eventos com Kafka",
+          "enunciado": "Escreva um consumidor que leia pedidos de um tópico, calcule o total por cliente e publique o resultado em outro tópico.",
+          "entrada": "Mensagens JSON de pedidos",
+          "saida": "Mensagens JSON com total por cliente",
+          "dicas": [
+            "Use consumer groups.",
+            "Faça commit do offset só após processar."
+          ],
+          "restricoes": [
+            "Garanta processamento idempotente."
+          ]
+        }
+      ]
+    },
+    "SQL": {
+      "Básico": [
+        {
+          "titulo": "Clientes por cidade",
+          "enunciado": "Dada a tabela clientes(id, nome, cidade), liste quantos clientes existem por cidade, da maior para a menor quantidade.",
+          "entrada": "Tabela clientes",
+          "saida": "cidade | total",
+          "dicas": [
+            "GROUP BY cidade.",
+            "ORDER BY total DESC."
+          ],
+          "restricoes": [
+            "Uma única consulta."
+          ]
+        },
+        {
+          "titulo": "Pedidos com JOIN",
+          "enunciado": "Com as tabelas clientes e pedidos, liste o nome do cliente e o valor de cada pedido, incluindo clientes sem pedidos.",
+          "entrada": "Tabelas clientes e pedidos",
+          "saida": "nome | valor (NULL para quem não comprou)",
+          "dicas": [
+            "LEFT JOIN mantém todos os clientes.",
+            "COALESCE troca NULL por 0."
+          ],
+          "restricoes": [
+            "Não use subconsultas."
+          ]
+        }
+      ],
+      "Intermediário": [
+        {
+          "titulo": "Ranking de vendedores",
+          "enunciado": "Mostre o ranking mensal de vendedores por faturamento, reiniciando a posição a cada mês.",
+          "entrada": "Tabela vendas(vendedor, data, valor)",
+          "saida": "mes | vendedor | faturamento | posicao",
+          "dicas": [
+            "RANK() OVER (PARTITION BY mes ORDER BY ...).",
+            "Agrupe antes em uma CTE."
+          ],
+          "restricoes": [
+            "Use CTE."
+          ]
+        },
+        {
+          "titulo": "Clientes inativos",
+          "enunciado": "Liste clientes que não compram há mais de 90 dias, com a data da última compra.",
+          "entrada": "Tabelas clientes e pedidos",
+          "saida": "nome | ultima_compra",
+          "dicas": [
+            "MAX(data) por cliente.",
+            "HAVING filtra pelo intervalo."
+          ],
+          "restricoes": [
+            "Considere clientes sem nenhuma compra."
+          ]
+        }
+      ],
+      "Avançado": [
+        {
+          "titulo": "Otimização de consulta lenta",
+          "enunciado": "Uma consulta em uma tabela de 50 milhões de linhas leva 40 s. Analise o plano de execução e proponha índices e reescritas.",
+          "entrada": "Consulta e esquema fornecidos",
+          "saida": "Plano antes/depois e consulta otimizada",
+          "dicas": [
+            "Compare EXPLAIN ANALYZE antes e depois.",
+            "Cuidado com funções aplicadas à coluna filtrada."
+          ],
+          "restricoes": [
+            "Não alterar o resultado da consulta."
+          ]
+        },
+        {
+          "titulo": "Particionamento por data",
+          "enunciado": "Projete o particionamento mensal de uma tabela de logs e escreva a rotina que cria partições futuras e remove as antigas.",
+          "entrada": "Tabela logs(id, criado_em, mensagem)",
+          "saida": "Scripts DDL e rotina de manutenção",
+          "dicas": [
+            "Partição por intervalo em criado_em.",
+            "Automatize com uma função agendada."
+          ],
+          "restricoes": [
+            "Sem downtime para leitura."
+          ]
+        }
+      ]
+    },
+    "Cloud": {
+      "Básico": [
+        {
+          "titulo": "Escolha do modelo de serviço",
+          "enunciado": "Para três cenários (blog pessoal, e-commerce em crescimento, sistema de análise de dados), escolha IaaS, PaaS ou SaaS e justifique.",
+          "entrada": "Descrição dos cenários",
+          "saida": "Tabela cenário | modelo | justificativa",
+          "dicas": [
+            "Pense em quanto controle a equipe precisa.",
+            "Considere custo e esforço de manutenção."
+          ],
+          "restricoes": [
+            "Justifique em no máximo 3 linhas por cenário."
+          ]
+        },
+        {
+          "titulo": "Estimativa de custos",
+          "enunciado": "Estime o custo mensal de uma aplicação com 2 servidores, 100 GB de armazenamento e 500 GB de tráfego de saída.",
+          "entrada": "Preços fictícios fornecidos",
+          "saida": "Custo mensal total com detalhamento",
+          "dicas": [
+            "Some computação, armazenamento e rede.",
+            "Mostre o cálculo de cada item."
+          ],
+          "restricoes": [
+            "Use apenas os preços fornecidos."
+          ]
+        }
+      ],
+      "Intermediário": [
+        {
+          "titulo": "Dockerizar uma aplicação",
+          "enunciado": "Escreva um Dockerfile multi-stage para uma API e um docker-compose que suba a API e o banco de dados.",
+          "entrada": "Código de uma API simples",
+          "saida": "Dockerfile e docker-compose.yml funcionais",
+          "dicas": [
+            "Separe build e runtime.",
+            "Use volumes para persistir o banco."
+          ],
+          "restricoes": [
+            "Imagem final com menos de 200 MB."
+          ]
+        },
+        {
+          "titulo": "Pipeline de CI/CD",
+          "enunciado": "Crie um pipeline que rode testes, construa a imagem e publique em um registry a cada push na branch main.",
+          "entrada": "Repositório com testes",
+          "saida": "Arquivo de pipeline (YAML)",
+          "dicas": [
+            "Separe etapas de test, build e publish.",
+            "Guarde credenciais em secrets."
+          ],
+          "restricoes": [
+            "Nenhum segredo no repositório."
+          ]
+        }
+      ],
+      "Avançado": [
+        {
+          "titulo": "Arquitetura multi-região",
+          "enunciado": "Desenhe uma arquitetura com failover entre duas regiões para uma API com banco de dados, definindo RTO e RPO.",
+          "entrada": "Requisitos: RTO 5 min, RPO 1 min",
+          "saida": "Diagrama e justificativa das escolhas",
+          "dicas": [
+            "Replicação assíncrona do banco.",
+            "Roteamento por DNS com health checks."
+          ],
+          "restricoes": [
+            "Cite o custo adicional da solução."
+          ]
+        },
+        {
+          "titulo": "Infraestrutura como código",
+          "enunciado": "Escreva o código para provisionar rede, balanceador e grupo de instâncias com autoescala, de forma reutilizável.",
+          "entrada": "Variáveis de ambiente e tamanho",
+          "saida": "Módulo reutilizável com variáveis e outputs",
+          "dicas": [
+            "Modularize por responsabilidade.",
+            "Use estado remoto com bloqueio."
+          ],
+          "restricoes": [
+            "Idempotente: aplicar duas vezes não muda nada."
+          ]
+        }
+      ]
+    },
+    "IA Generativa": {
+      "Básico": [
+        {
+          "titulo": "Prompt para resumo",
+          "enunciado": "Escreva um prompt que peça a um modelo um resumo de um texto em 3 tópicos, tom neutro e sem inventar informações.",
+          "entrada": "Um texto de exemplo",
+          "saida": "Prompt final e o resumo obtido",
+          "dicas": [
+            "Defina papel, tarefa e formato.",
+            "Peça explicitamente para não inventar."
+          ],
+          "restricoes": [
+            "Teste com ao menos 2 textos diferentes."
+          ]
+        },
+        {
+          "titulo": "Detector de alucinações",
+          "enunciado": "Peça a um modelo uma resposta sobre um tema que você domina e liste as informações incorretas encontradas.",
+          "entrada": "Pergunta de sua escolha",
+          "saida": "Lista de afirmações verificadas como corretas ou incorretas",
+          "dicas": [
+            "Confira as afirmações em fontes confiáveis.",
+            "Anote como reformular o prompt para reduzir erros."
+          ],
+          "restricoes": [
+            "Verifique ao menos 5 afirmações."
+          ]
+        }
+      ],
+      "Intermediário": [
+        {
+          "titulo": "Chatbot com contexto",
+          "enunciado": "Crie um chatbot de terminal que mantenha o histórico da conversa e envie o contexto a cada nova pergunta.",
+          "entrada": "Perguntas digitadas",
+          "saida": "Respostas coerentes com o histórico",
+          "dicas": [
+            "Guarde mensagens em uma lista de papéis (user/assistant).",
+            "Limite o histórico para controlar custo."
+          ],
+          "restricoes": [
+            "Chave de API só por variável de ambiente."
+          ]
+        },
+        {
+          "titulo": "Busca semântica",
+          "enunciado": "Gere embeddings de 20 frases, armazene-os e retorne as 3 mais parecidas com uma consulta.",
+          "entrada": "Consulta em texto livre",
+          "saida": "As 3 frases mais similares com a pontuação",
+          "dicas": [
+            "Use similaridade de cosseno.",
+            "Calcule os embeddings uma vez só."
+          ],
+          "restricoes": [
+            "Sem banco vetorial externo."
+          ]
+        }
+      ],
+      "Avançado": [
+        {
+          "titulo": "Servidor MCP de notas",
+          "enunciado": "Crie um servidor MCP com as ferramentas criar_nota, listar_notas e buscar_nota, persistindo em arquivo JSON.",
+          "entrada": "Chamadas de ferramentas MCP",
+          "saida": "Respostas das ferramentas em texto",
+          "dicas": [
+            "Defina esquemas de entrada com zod.",
+            "Trate erros devolvendo isError."
+          ],
+          "restricoes": [
+            "Valide todas as entradas."
+          ]
+        },
+        {
+          "titulo": "Agente com guardrails",
+          "enunciado": "Implemente um agente que use duas ferramentas e bloqueie pedidos fora do escopo com uma verificação antes da execução.",
+          "entrada": "Pedidos em linguagem natural",
+          "saida": "Resposta do agente ou recusa justificada",
+          "dicas": [
+            "Classifique o pedido antes de agir.",
+            "Registre cada decisão em log."
+          ],
+          "restricoes": [
+            "Nunca executar ferramenta sem validação."
+          ]
+        }
+      ]
+    },
+    "TypeScript": {
+      "Básico": [
+        {
+          "titulo": "Tipar um carrinho",
+          "enunciado": "Crie interfaces para Produto e ItemCarrinho e uma função tipada que calcule o total do carrinho.",
+          "entrada": "Lista de itens com preço e quantidade",
+          "saida": "Total numérico",
+          "dicas": [
+            "Defina interface Produto { id: number; preco: number }.",
+            "Evite o tipo any."
+          ],
+          "restricoes": [
+            "strict ativado no tsconfig."
+          ]
+        },
+        {
+          "titulo": "Função de filtro tipada",
+          "enunciado": "Escreva uma função filtrarPorStatus que receba uma lista de tarefas e um status e retorne apenas as tarefas daquele status.",
+          "entrada": "Lista de tarefas e um status",
+          "saida": "Lista filtrada",
+          "dicas": [
+            "Use union types para o status.",
+            "O retorno deve ter o mesmo tipo da entrada."
+          ],
+          "restricoes": [
+            "Sem asserções de tipo (as)."
+          ]
+        }
+      ],
+      "Intermediário": [
+        {
+          "titulo": "Função genérica groupBy",
+          "enunciado": "Implemente groupBy<T, K> que agrupe uma lista de objetos pela chave informada.",
+          "entrada": "Lista de objetos e o nome da chave",
+          "saida": "Objeto com os grupos",
+          "dicas": [
+            "Use Record<string, T[]>.",
+            "Restrinja K com keyof T."
+          ],
+          "restricoes": [
+            "Totalmente tipada, sem any."
+          ]
+        },
+        {
+          "titulo": "Validador de formulário",
+          "enunciado": "Crie um validador tipado para um formulário de cadastro que retorne erros por campo.",
+          "entrada": "Objeto com nome, email e senha",
+          "saida": "Objeto com erros por campo",
+          "dicas": [
+            "Partial<Record<keyof Form, string>> descreve os erros.",
+            "Separe cada regra em uma função."
+          ],
+          "restricoes": [
+            "Sem bibliotecas de validação."
+          ]
+        }
+      ],
+      "Avançado": [
+        {
+          "titulo": "Tipo DeepReadonly",
+          "enunciado": "Implemente o tipo utilitário DeepReadonly<T>, que torna imutáveis todas as propriedades, inclusive aninhadas.",
+          "entrada": "Um tipo com objetos aninhados e arrays",
+          "saida": "Tipo resultante com tudo readonly",
+          "dicas": [
+            "Use mapped types e recursão.",
+            "Trate arrays e funções separadamente."
+          ],
+          "restricoes": [
+            "Escreva testes de tipo com assertivas de compilação."
+          ]
+        },
+        {
+          "titulo": "Event emitter tipado",
+          "enunciado": "Crie um EventEmitter em que o nome do evento determine o tipo do payload do listener.",
+          "entrada": "Mapa de eventos e payloads",
+          "saida": "API que não compila com evento ou payload errado",
+          "dicas": [
+            "Genérico sobre o mapa de eventos.",
+            "Use keyof para o nome do evento."
+          ],
+          "restricoes": [
+            "Zero any."
+          ]
+        }
+      ]
+    },
+    "React": {
+      "Básico": [
+        {
+          "titulo": "Contador com botões",
+          "enunciado": "Crie um componente com botões para incrementar, decrementar e zerar um contador, mostrando o valor na tela.",
+          "entrada": "Cliques do usuário",
+          "saida": "Valor atualizado",
+          "dicas": [
+            "useState guarda o valor.",
+            "Não deixe o valor ficar negativo."
+          ],
+          "restricoes": [
+            "Componente funcional."
+          ]
+        },
+        {
+          "titulo": "Lista de tarefas",
+          "enunciado": "Monte uma lista de tarefas com adicionar, marcar como concluída e remover.",
+          "entrada": "Texto digitado",
+          "saida": "Lista atualizada",
+          "dicas": [
+            "Use key estável nos itens.",
+            "Atualize o estado sem mutar o array."
+          ],
+          "restricoes": [
+            "Sem bibliotecas de estado."
+          ]
+        }
+      ],
+      "Intermediário": [
+        {
+          "titulo": "Busca com hook personalizado",
+          "enunciado": "Crie o hook useFetch(url) que devolva dados, estado de carregamento e erro, e use-o em uma lista de usuários.",
+          "entrada": "URL de uma API",
+          "saida": "dados, carregando e erro",
+          "dicas": [
+            "Cancele a requisição ao desmontar.",
+            "useEffect depende da url."
+          ],
+          "restricoes": [
+            "Tratar loading e erro na tela."
+          ]
+        },
+        {
+          "titulo": "Tema claro e escuro",
+          "enunciado": "Implemente alternância de tema com Context API, guardando a escolha entre visitas.",
+          "entrada": "Clique no botão de tema",
+          "saida": "Interface muda de tema e lembra a escolha",
+          "dicas": [
+            "Context com valor e função de troca.",
+            "Leia o valor inicial do armazenamento do navegador."
+          ],
+          "restricoes": [
+            "Evitar re-renderizações desnecessárias."
+          ]
+        }
+      ],
+      "Avançado": [
+        {
+          "titulo": "Lista virtualizada",
+          "enunciado": "Renderize uma lista de 100 mil itens mantendo a rolagem fluida, desenhando apenas os itens visíveis.",
+          "entrada": "Lista grande de itens",
+          "saida": "Rolagem sem travar",
+          "dicas": [
+            "Calcule o intervalo visível pelo scroll.",
+            "Use altura fixa por item."
+          ],
+          "restricoes": [
+            "Máximo de 50 nós de item no DOM."
+          ]
+        },
+        {
+          "titulo": "Formulário com estado otimista",
+          "enunciado": "Implemente a criação de um item com atualização otimista da interface e reversão se a API falhar.",
+          "entrada": "Envio de formulário",
+          "saida": "Item aparece de imediato e some se der erro",
+          "dicas": [
+            "Guarde o estado anterior para reverter.",
+            "Mostre feedback de erro."
+          ],
+          "restricoes": [
+            "Testes com Testing Library."
+          ]
+        }
+      ]
+    },
+    "Análise de Dados": {
+      "Básico": [
+        {
+          "titulo": "Limpeza de planilha",
+          "enunciado": "Dada uma planilha com duplicados, células vazias e datas em formatos diferentes, padronize os dados e documente o que mudou.",
+          "entrada": "Planilha com dados sujos",
+          "saida": "Planilha limpa e lista de ajustes",
+          "dicas": [
+            "Padronize datas para AAAA-MM-DD.",
+            "Decida e registre como tratar vazios."
+          ],
+          "restricoes": [
+            "Não apague dados sem registrar."
+          ]
+        },
+        {
+          "titulo": "Estatística descritiva",
+          "enunciado": "Calcule média, mediana, moda e desvio padrão de uma lista de números e explique o que cada medida mostra.",
+          "entrada": "Lista de números",
+          "saida": "Quatro medidas com uma frase de interpretação",
+          "dicas": [
+            "Compare média e mediana na presença de outliers.",
+            "Use a biblioteca statistics."
+          ],
+          "restricoes": [
+            "Sem pandas."
+          ]
+        }
+      ],
+      "Intermediário": [
+        {
+          "titulo": "Análise exploratória de vendas",
+          "enunciado": "Com um CSV de vendas, descubra o mês de maior faturamento, o produto líder e a tendência do ano.",
+          "entrada": "Arquivo vendas.csv",
+          "saida": "Resumo com 3 gráficos",
+          "dicas": [
+            "groupby por mês e produto.",
+            "Gráfico de linha para tendência."
+          ],
+          "restricoes": [
+            "Todos os gráficos com título e eixos nomeados."
+          ]
+        },
+        {
+          "titulo": "Correlação entre variáveis",
+          "enunciado": "Verifique se existe correlação entre investimento em anúncios e vendas e comente o resultado.",
+          "entrada": "Duas colunas numéricas",
+          "saida": "Coeficiente e interpretação",
+          "dicas": [
+            "corr() e gráfico de dispersão.",
+            "Correlação não implica causa."
+          ],
+          "restricoes": [
+            "Mencionar uma limitação da análise."
+          ]
+        }
+      ],
+      "Avançado": [
+        {
+          "titulo": "Modelo de previsão de churn",
+          "enunciado": "Treine um classificador para prever cancelamentos e avalie com precisão, recall e F1.",
+          "entrada": "Dataset de clientes",
+          "saida": "Métricas e principais variáveis",
+          "dicas": [
+            "Separe treino e teste antes de tudo.",
+            "Cuidado com classes desbalanceadas."
+          ],
+          "restricoes": [
+            "Validação cruzada obrigatória."
+          ]
+        },
+        {
+          "titulo": "Pipeline reprodutível",
+          "enunciado": "Transforme um notebook em um pipeline em scripts, com etapas de limpeza, treino e avaliação.",
+          "entrada": "Notebook de partida",
+          "saida": "Projeto executável com um comando",
+          "dicas": [
+            "Fixe sementes aleatórias.",
+            "Salve o modelo e as métricas."
+          ],
+          "restricoes": [
+            "Resultados reproduzíveis em outra máquina."
+          ]
+        }
+      ]
+    },
+    "DevOps": {
+      "Básico": [
+        {
+          "titulo": "Script de backup",
+          "enunciado": "Escreva um script de shell que compacte uma pasta, nomeie o arquivo com a data e apague backups com mais de 7 dias.",
+          "entrada": "Caminho da pasta",
+          "saida": "Arquivo .tar.gz datado",
+          "dicas": [
+            "Use tar e date.",
+            "find -mtime filtra os antigos."
+          ],
+          "restricoes": [
+            "O script deve falhar com mensagem clara se a pasta não existir."
+          ]
+        },
+        {
+          "titulo": "Primeiro workflow de CI",
+          "enunciado": "Crie um workflow que rode os testes do projeto a cada push.",
+          "entrada": "Repositório com testes",
+          "saida": "Arquivo de workflow em YAML",
+          "dicas": [
+            "Defina o gatilho on: push.",
+            "Instale dependências antes de testar."
+          ],
+          "restricoes": [
+            "Sem segredos no arquivo."
+          ]
+        }
+      ],
+      "Intermediário": [
+        {
+          "titulo": "Dockerfile multi-stage",
+          "enunciado": "Escreva um Dockerfile multi-stage para uma API, minimizando o tamanho da imagem final.",
+          "entrada": "Código de uma API",
+          "saida": "Dockerfile e tamanho da imagem",
+          "dicas": [
+            "Compile em um estágio e copie só o necessário.",
+            "Rode como usuário não root."
+          ],
+          "restricoes": [
+            "Imagem final com menos de 150 MB."
+          ]
+        },
+        {
+          "titulo": "Pipeline com etapas",
+          "enunciado": "Monte um pipeline com etapas de lint, teste, build e publicação, onde cada etapa só roda se a anterior passar.",
+          "entrada": "Repositório de exemplo",
+          "saida": "Pipeline em YAML",
+          "dicas": [
+            "Declare dependências entre jobs.",
+            "Use cache para dependências."
+          ],
+          "restricoes": [
+            "Publicação apenas na branch main."
+          ]
+        }
+      ],
+      "Avançado": [
+        {
+          "titulo": "Definir SLOs",
+          "enunciado": "Defina SLIs e SLOs para uma API de pagamentos e calcule o error budget mensal.",
+          "entrada": "Meta de disponibilidade de 99,9%",
+          "saida": "Tabela de SLIs, SLOs e orçamento de erro",
+          "dicas": [
+            "99,9% ao mês permite cerca de 43 minutos fora do ar.",
+            "Escolha SLIs que o usuário sente."
+          ],
+          "restricoes": [
+            "Justifique cada SLO."
+          ]
+        },
+        {
+          "titulo": "Deploy sem downtime",
+          "enunciado": "Projete uma estratégia de deploy canário com rollback automático baseado em métricas.",
+          "entrada": "Descrição do serviço",
+          "saida": "Plano com critérios de promoção e rollback",
+          "dicas": [
+            "Comece com pouco tráfego.",
+            "Defina limites de erro e latência."
+          ],
+          "restricoes": [
+            "Rollback em menos de 2 minutos."
+          ]
+        }
+      ]
+    },
+    "Segurança": {
+      "Básico": [
+        {
+          "titulo": "Política de senhas",
+          "enunciado": "Escreva uma função que avalie a força de uma senha e explique o que falta para melhorá-la.",
+          "entrada": "Uma senha em texto",
+          "saida": "Classificação e sugestões",
+          "dicas": [
+            "Considere tamanho, variedade e senhas comuns.",
+            "Nunca registre a senha em log."
+          ],
+          "restricoes": [
+            "Não envie a senha para serviços externos."
+          ]
+        },
+        {
+          "titulo": "Detector de phishing",
+          "enunciado": "Liste 5 sinais de e-mail de phishing e escreva um verificador simples de links suspeitos.",
+          "entrada": "Uma URL",
+          "saida": "Suspeita ou aparentemente segura, com o motivo",
+          "dicas": [
+            "Observe o domínio verdadeiro.",
+            "Cuidado com URLs encurtadas."
+          ],
+          "restricoes": [
+            "Justifique cada alerta."
+          ]
+        }
+      ],
+      "Intermediário": [
+        {
+          "titulo": "Corrigir injeção de SQL",
+          "enunciado": "Dado um trecho de código que concatena entrada em uma consulta, reescreva-o usando consultas parametrizadas e escreva um teste de ataque.",
+          "entrada": "Código vulnerável de exemplo",
+          "saida": "Código corrigido e teste",
+          "dicas": [
+            "Parametrize em vez de concatenar.",
+            "Teste com ' OR '1'='1."
+          ],
+          "restricoes": [
+            "Nenhuma concatenação de entrada em SQL."
+          ]
+        },
+        {
+          "titulo": "Armazenamento de senhas",
+          "enunciado": "Implemente cadastro e login guardando senhas com hash e salt apropriados.",
+          "entrada": "Usuário e senha",
+          "saida": "Cadastro e login funcionais sem senha em texto",
+          "dicas": [
+            "Use bcrypt ou argon2.",
+            "Compare hashes em tempo constante."
+          ],
+          "restricoes": [
+            "Nunca usar MD5 ou SHA-1 puro."
+          ]
+        }
+      ],
+      "Avançado": [
+        {
+          "titulo": "Modelagem de ameaças",
+          "enunciado": "Faça a modelagem de ameaças (STRIDE) de um app de delivery e priorize os riscos.",
+          "entrada": "Diagrama simples do sistema",
+          "saida": "Tabela de ameaças, impacto e mitigação",
+          "dicas": [
+            "Identifique fronteiras de confiança.",
+            "Priorize por probabilidade e impacto."
+          ],
+          "restricoes": [
+            "Ao menos 8 ameaças."
+          ]
+        },
+        {
+          "titulo": "Detecção de força bruta",
+          "enunciado": "Escreva uma regra que detecte tentativas de login em excesso a partir de logs e bloqueie o IP temporariamente.",
+          "entrada": "Arquivo de logs de autenticação",
+          "saida": "Lista de IPs bloqueados e o motivo",
+          "dicas": [
+            "Janela deslizante por IP.",
+            "Evite bloquear usuários legítimos."
+          ],
+          "restricoes": [
+            "Registrar toda decisão de bloqueio."
+          ]
+        }
+      ]
+    },
+    "Git e GitHub": {
+      "Básico": [
+        {
+          "titulo": "Primeiro repositório",
+          "enunciado": "Crie um repositório, faça 3 commits com mensagens claras e envie ao GitHub.",
+          "entrada": "Pasta com 3 arquivos",
+          "saida": "Histórico com 3 commits",
+          "dicas": [
+            "git init, add e commit.",
+            "Use mensagens no imperativo."
+          ],
+          "restricoes": [
+            "Nenhum arquivo sensível versionado."
+          ]
+        },
+        {
+          "titulo": "Resolver um conflito",
+          "enunciado": "Crie duas branches que editem a mesma linha, faça o merge e resolva o conflito.",
+          "entrada": "Duas branches com alterações conflitantes",
+          "saida": "Merge concluído sem marcadores de conflito",
+          "dicas": [
+            "Abra o arquivo e escolha o resultado final.",
+            "git status mostra o que falta."
+          ],
+          "restricoes": [
+            "Registre os comandos usados."
+          ]
+        }
+      ],
+      "Intermediário": [
+        {
+          "titulo": "Fluxo de pull request",
+          "enunciado": "Abra um pull request com descrição clara, peça revisão e incorpore um comentário recebido.",
+          "entrada": "Repositório com uma melhoria",
+          "saida": "Pull request revisado e aprovado",
+          "dicas": [
+            "Explique o porquê da mudança.",
+            "Mantenha o PR pequeno."
+          ],
+          "restricoes": [
+            "Uma mudança lógica por PR."
+          ]
+        },
+        {
+          "titulo": "Workflow de Actions",
+          "enunciado": "Crie um workflow do GitHub Actions que rode testes e publique o resultado como artefato.",
+          "entrada": "Repositório com testes",
+          "saida": "Arquivo YAML funcionando",
+          "dicas": [
+            "Gatilhos push e pull_request.",
+            "upload-artifact guarda o relatório."
+          ],
+          "restricoes": [
+            "Sem segredos no arquivo."
+          ]
+        }
+      ],
+      "Avançado": [
+        {
+          "titulo": "Rebase interativo",
+          "enunciado": "Reorganize 6 commits bagunçados em 3 commits limpos usando rebase interativo.",
+          "entrada": "Branch com histórico confuso",
+          "saida": "Histórico limpo",
+          "dicas": [
+            "squash e fixup juntam commits.",
+            "Faça backup da branch antes."
+          ],
+          "restricoes": [
+            "Não reescreva histórico já compartilhado."
+          ]
+        },
+        {
+          "titulo": "Encontrar o commit com bug",
+          "enunciado": "Use git bisect para achar o commit que introduziu um bug em um histórico de 100 commits.",
+          "entrada": "Repositório com um teste que falha",
+          "saida": "Hash do commit culpado",
+          "dicas": [
+            "bisect start, good e bad.",
+            "Automatize com git bisect run."
+          ],
+          "restricoes": [
+            "No máximo 7 passos de bisect."
+          ]
+        }
+      ]
+    }
+  }
+}
